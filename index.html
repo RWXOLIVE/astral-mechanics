@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Astral Emerald - Mechanic Changes</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --header-bg: #1f1f1f;
+      --nav-bg: #292929;
+      --accent-color: #00bcd4;
+      --border-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      padding: 2rem 1rem;
+      min-width: 200px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid var(--border-color);
+    }
+
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav {
+        flex-direction: row;
+        height: auto;
+        min-width: unset;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pokemon Astral Emerald - Mechanic Changes</h1>
+  </header>
+  <div class="container">
+    <nav>
+      <a href="#general">General Changes</a>
+      <a href="#status">Status Effects</a>
+      <a href="#abilities">Ability Changes</a>
+      <a href="#moves">New Moves & Abilities</a>
+      <a href="#items">Item Reworks</a>
+      <a href="#levelcap">Level Cap</a>
+    </nav>
+    <main>
+    <section id="general">
+      <h2>General Changes</h2>
+      <ul>
+        <li>Battle style is set mode by default.</li>
+        <li>Tera Orb needs recharging after every use.</li>
+        <li>Can't use Tera and Mega in same battle.</li>
+        <li>EVs removed.</li>
+        <li>Wild double battles 12%.</li>
+        <li>Safari Balls = 100% catch rate.</li>
+        <li>Bag is inaccessible in trainer battles.</li>
+        <li>Gym Leader battles auto-heal you before battle.</li>
+        <li>Most TMs are single use.</li>
+        <li>Tutors replaced by reusable TMs.</li>
+        <li>HMs don't need to be taught — badge + HM is enough.</li>
+      </ul>
+    </section>
+
+    <section id="status">
+      <h2>Status Effects</h2>
+      <ul>
+        <li><strong>Frostbite</strong>: 1/16 HP damage + special move damage reduction. Ice types immune.</li>
+        <li>Critical hit chance: 1/24 → 1/16. Damage unchanged.</li>
+      </ul>
+    </section>
+
+    <section id="abilities">
+      <h2>Ability Changes</h2>
+      <ul>
+        <li>Disguise: No damage when broken.</li>
+        <li>Magma Armor: Prevents critical hits.</li>
+        <li>Moody: May raise accuracy and evasion.</li>
+        <li>Synchronize: 50% chance to match nature.</li>
+        <li>Super Luck: 60%/20% held item rate increase.</li>
+        <li>Harvest: 50% chance to encounter grass types.</li>
+        <li>Flash Fire: 50% chance to encounter fire types.</li>
+        <li>Weather abilities: Now permanent.</li>
+      </ul>
+    </section>
+
+    <section id="moves">
+      <h2>New Moves & Abilities</h2>
+      <ul>
+        <li><strong>Floral Payload</strong> (Ability): Boosts Grass moves by 1.5x.</li>
+        <li><strong>Lunar Veil</strong> (Ability): Boosts Dark & Ghost moves by 1.2x.</li>
+        <li><strong>Solar Veil</strong> (Ability): Boosts Fire & Ground moves by 1.2x.</li>
+        <li><strong>Aqua Fang</strong>: Like Psychic Fangs + 10% flinch/defense drop.</li>
+        <li><strong>Frost-Wisp</strong>: Will-O-Wisp clone for special attackers.</li>
+        <li><strong>Venom Drain</strong>: Giga Drain clone, 75 BP, 10% poison chance.</li>
+        <li><strong>Tectonic Rage</strong>: Ground-type Outrage clone.</li>
+        <li><strong>Frost Blast</strong>: Ice-type Blast Burn clone.</li>
+      </ul>
+    </section>
+
+    <section id="items">
+      <h2>Item Reworks</h2>
+      <ul>
+        <li>Consumed/removed battle items are not restored after battle.</li>
+        <li><strong>Utility Umbrella</strong>: Ignores rain/sun effects.</li>
+        <li><strong>Fishing</strong>: Always guaranteed without timing.</li>
+      </ul>
+    </section>
+
+    <section id="levelcap">
+      <h2>Level Cap</h2>
+      <p>Once a Pokémon hits the cap, it gains no XP. Rare Candies can bypass but are limited.</p>
+      <table>
+        <thead>
+          <tr><th>Boss</th><th>Level Cap</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Trainer Tiana</td><td>13</td></tr>
+          <tr><td>Team Aqua Grunt (Petalburg)</td><td>17</td></tr>
+          <tr><td>Leader Roxanne/Brock</td><td>19</td></tr>
+          <tr><td>Leader Brawly</td><td>25</td></tr>
+          <tr><td>Team Aqua Grunts (Slateport Museum)</td><td>33</td></tr>
+          <tr><td>Alexia/George (Petalburg Gym Trainers)</td><td>35</td></tr>
+          <tr><td>Leader Norman</td><td>37</td></tr>
+          <tr><td>Leader Elesa/Jasmine</td><td>44</td></tr>
+          <tr><td>Mt Chimney Tabitha</td><td>47</td></tr>
+          <tr><td>Mt Chimney Maxie</td><td>51</td></tr>
+          <tr><td>Leader Blaine & Flannery</td><td>54</td></tr>
+          <tr><td>Weather Institute Shelly</td><td>61</td></tr>
+          <tr><td>Route 119 Rival</td><td>62</td></tr>
+          <tr><td>Leader Winona & Brassius</td><td>67</td></tr>
+          <tr><td>Ghetsis & N (Lavaridge Core B1F)</td><td>70</td></tr>
+          <tr><td>Lilycove City Rival</td><td>72</td></tr>
+          <tr><td>Mt. Pyre Archie</td><td>73</td></tr>
+          <tr><td>Magma Hideout Maxie</td><td>77</td></tr>
+          <tr><td>Aqua Hideout Matt</td><td>80</td></tr>
+          <tr><td>PKMN Trainer Carlita</td><td>83</td></tr>
+          <tr><td>Leader Tate & Liza</td><td>87</td></tr>
+          <tr><td>Seafloor Cavern Archie</td><td>90</td></tr>
+          <tr><td>Leader Wake & Nessa</td><td>92</td></tr>
+          <tr><td>VR Wally & Carlita</td><td>95</td></tr>
+          <tr><td>Champion Valerie</td><td>99</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
