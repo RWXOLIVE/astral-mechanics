@@ -132,8 +132,6 @@
       <a href="#abilities">Ability Changes</a>
       <a href="#moves">New Moves & Abilities</a>
       <a href="#items">Item Reworks</a>
-      <a href="#teratypescientists">Tera Type Scientists</a>
-      <a href="#levelcap">Level Cap</a>
     </nav>
     <main>
     <section id="general">
@@ -156,6 +154,7 @@
       <ul>
         <li><strong>Frostbite</strong>: 1/16 HP damage + special move damage reduction. Ice types immune.</li>
         <li>Critical hit chance: 1/24 → 1/16. Damage unchanged.</li>
+        <li>Paralysis: 75% speed reduction instead of 50%.</li>
       </ul>
     </section>
 
@@ -168,9 +167,11 @@
         <li>Synchronize: 50% chance to match nature.</li>
         <li>Protean/Libero: No longer changes once per battle.</li>
         <li>Super Luck: 60%/20% held item rate increase.</li>
+        <li>Gale Wings: Reverted back to how it was in Gen 6.</li>
         <li>Harvest: 50% chance to encounter grass types.</li>
         <li>Reckless: Normal/Fighting moves now hit ghost types with this ability.</li>
         <li>Weather abilities: Now permanent.</li>
+        <li>Consumed/removed battle items are not restored after battle - i.e Knock Off or berry consumed.</li>
       </ul>
     </section>
 
@@ -178,54 +179,28 @@
       <h2>New Moves & Abilities</h2>
       <ul>
         <li><strong>Floral Payload</strong> (Ability): Boosts Grass moves by 1.5x.</li>
-        <li><strong>Blazing Soul</strong> (Ability): Give Fire moves +1 priority at full HP.</li>
+        <li><strong>Blazing Soul</strong> (Ability): Give Fire moves +1 priority.</li>
         <li><strong>Lunar Veil</strong> (Ability): Boosts Dark & Ghost moves by 1.2x.</li>
         <li><strong>Solar Veil</strong> (Ability): Boosts Fire & Ground moves by 1.2x.</li>
-        <li><strong>Aqua Fang</strong>: Like Psychic Fangs + 10% flinch/defense drop.</li>
+        <li><strong>Striker</strong> (Ability): Boosts 'kicking' moves by 1.2x.</li>
+        <li><strong>Luchador's Pride</strong> (Ability): Boosts speed after a KO.</li>
+        <li><strong>Echoing Alloy</strong> (Ability): Turn's sound base moves into Steel type moves.</li>
+        <li><strong>Aqua Fangs</strong>: Like Psychic Fangs + 10% flinch/defense drop.</li>
+        <li><strong>Scale Chomp</strong>: 20% speed boost by 1 stage but also 10% to lower Defense.</li>
         <li><strong>Venom Drain</strong>: Giga Drain clone, 75 BP, 10% poison chance.</li>
         <li><strong>Tectonic Rage</strong>: Flare Blitz clone.</li>
         <li><strong>Frost Blast</strong>: Ice-type Blast Burn clone.</li>
+        <li><strong>Volt Volley</strong>: 10% Chance to paralyze and flinch. Boosted by Striker</li>
       </ul>
     </section>
 
     <section id="items">
       <h2>Item Reworks</h2>
       <ul>
-        <li>Consumed/removed battle items are not restored after battle.</li>
         <li><strong>Utility Umbrella</strong>: Ignores rain/sun effects.</li>
         <li><strong>Fishing</strong>: Always guaranteed without timing.</li>
       </ul>
     </section>
-
-    <section id="teratypescientists">
-        <h2>Tera Type Scientists</h2>
-        <p>Once you find a Tera Shard there will be Scientists will to change your tera type for a Tera Shard that they want. There are 18 Tera Shards and there are only 1 of each!</p>
-        <table>
-          <thead>
-            <tr><th>Location</th><th>Tera Shard</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Rustboro City</td><td>Rock Tera Shard</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-            <tr><td>?</td><td>?</td></tr>
-          </tbody>
-        </table>
-      </section>
 
     <section id="levelcap">
       <h2>Level Cap</h2>
@@ -235,7 +210,6 @@
           <tr><th>Boss</th><th>Level Cap</th></tr>
         </thead>
         <tbody>
-          <tr><td>Trainer Tiana</td><td>13</td></tr>
           <tr><td>Team Aqua Grunt (Petalburg)</td><td>16</td></tr>
           <tr><td>Leader Roxanne/Brock</td><td>19</td></tr>
           <tr><td>Leader Brawly</td><td>25</td></tr>
@@ -247,17 +221,16 @@
           <tr><td>Mt Chimney Maxie</td><td>51</td></tr>
           <tr><td>Leader Blaine & Flannery</td><td>54</td></tr>
           <tr><td>Weather Institute Shelly</td><td>61</td></tr>
-          <tr><td>Route 119 Rival</td><td>62</td></tr>
-          <tr><td>Leader Winona & Brassius</td><td>67</td></tr>
-          <tr><td>Ghetsis & N (Starfall Core)</td><td>70</td></tr>
-          <tr><td>Lilycove City Rival</td><td>72</td></tr>
-          <tr><td>Mt. Pyre Archie</td><td>73</td></tr>
-          <tr><td>Magma Hideout Maxie</td><td>77</td></tr>
-          <tr><td>Aqua Hideout Matt</td><td>80</td></tr>
-          <tr><td>PKMN Trainer Carlita</td><td>83</td></tr>
-          <tr><td>Leader Tate & Liza</td><td>87</td></tr>
-          <tr><td>Seafloor Cavern Archie</td><td>90</td></tr>
-          <tr><td>Leader Wake & Nessa</td><td>92</td></tr>
+          <tr><td>Route 119 Rival</td><td>64</td></tr>
+          <tr><td>Leader Winona & Brassius</td><td>73</td></tr>
+          <tr><td>Lilycove City Rival</td><td>76</td></tr>
+          <tr><td>Mt. Pyre Shelly</td><td>79</td></tr>
+          <tr><td>Magma Hideout Maxie</td><td>83</td></tr>
+          <tr><td>Aqua Hideout Matt</td><td>86</td></tr>
+          <tr><td>PKMN Trainer Carlita</td><td>89</td></tr>
+          <tr><td>Leader Tate & Liza</td><td>90</td></tr>
+          <tr><td>Seafloor Cavern Archie</td><td>92</td></tr>
+          <tr><td>Leader Wake & Nessa</td><td>93</td></tr>
           <tr><td>VR Wally & Carlita</td><td>95</td></tr>
           <tr><td>Champion Valerie</td><td>99</td></tr>
         </tbody>
